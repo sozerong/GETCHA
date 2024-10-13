@@ -10,9 +10,9 @@ import io
 # Flask 앱 초기화
 app = Flask(__name__)
 
-# YOLOv5 학습된 모델 로드 (best.pt 경로를 넣어줌)
+# YOLOv5 학습된 모델 로드 
 model = torch.hub.load('ultralytics/yolov5', 'custom', 
-                       path='C:/GitHub/Git/yolo/yolov5/runs/train/exp/weights/best.pt',
+                       path='학습된 모델 경로',
                        force_reload=True)
 
 # 빨간색 (RGB 값)
